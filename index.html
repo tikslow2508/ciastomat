@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="pl" data-lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ciastomat – Polityka prywatności / Privacy Policy</title>
+<meta name="description" content="Polityka prywatności aplikacji Ciastomat. Privacy policy of the Ciastomat app.">
+<meta name="theme-color" content="#FAF8F5">
+<style>
+/* Tokeny z design/source/System.dc.html (kierunek A „Zeszyt cukiernika”) */
+:root{
+  --krem:#FAF8F5; --biel:#FFFFFF; --mleko:#F3EFEA; --linia:#E6DFD6; --linia-m:#C9BEB4;
+  --kakao:#4A3F39; --mocha:#766760;
+  --karmel:#A65A33; --karmel-j:#F5E6DE; --karmel-c:#7A3F1D;
+  --szalwia:#4C7C68; --szalwia-j:#E2EDE8; --szalwia-c:#2F5A48;
+  --bursztyn:#B45309; --bursztyn-j:#FDEFD3; --bursztyn-c:#7A3A07;
+  --on-ciemne:#F5C9AE; --on-ciemne-2:#CDBFB1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;position:relative;background:var(--krem);color:var(--kakao);font-family:Roboto,"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;font-size:15px;line-height:1.6}
+a{color:var(--karmel);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:var(--karmel-c)}
+
+/* Dwa języki w jednym pliku: widoczny jest tylko wybrany */
+html[data-lang="pl"] [lang="en"]:not(html),
+html[data-lang="en"] [lang="pl"]:not(html){display:none!important}
+
+
+/* Tło: delikatny wzór z ciastek */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22260%22 viewBox=%220 0 260 260%22 fill=%22none%22 stroke=%22%23A65A33%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cg transform=%22translate(50 56) rotate(-12)%22%3E%3Cpath d=%22M-12 0L-9 16H9L12 0Z%22/%3E%3Cpath d=%22M-13 0C-16-10-6-12-6-16C-4-24 6-24 6-16C6-12 16-10 13 0Z%22/%3E%3Ccircle cx=%220%22 cy=%22-28%22 r=%223%22/%3E%3C/g%3E%3Cg transform=%22translate(180 50) rotate(15)%22%3E%3Ccircle r=%2215%22/%3E%3Ccircle cx=%22-5%22 cy=%22-5%22 r=%221.6%22 fill=%22%23A65A33%22/%3E%3Ccircle cx=%225%22 cy=%22-6%22 r=%221.6%22 fill=%22%23A65A33%22/%3E%3Ccircle cx=%223%22 cy=%225%22 r=%221.6%22 fill=%22%23A65A33%22/%3E%3Ccircle cx=%22-7%22 cy=%226%22 r=%221.6%22 fill=%22%23A65A33%22/%3E%3C/g%3E%3Cg transform=%22translate(110 150) rotate(8)%22%3E%3Cpath d=%22M-17 9H17V-2L-17-9Z%22/%3E%3Cpath d=%22M-17 1H17%22/%3E%3Ccircle cx=%229%22 cy=%22-10%22 r=%223%22/%3E%3C/g%3E%3Cg transform=%22translate(215 190) rotate(-18)%22%3E%3Cpath d=%22M-12 0L-9 16H9L12 0Z%22/%3E%3Cpath d=%22M-13 0C-16-10-6-12-6-16C-4-24 6-24 6-16C6-12 16-10 13 0Z%22/%3E%3Ccircle cx=%220%22 cy=%22-28%22 r=%223%22/%3E%3C/g%3E%3Cg transform=%22translate(40 205) rotate(10)%22%3E%3Ccircle r=%2215%22/%3E%3Ccircle cx=%22-5%22 cy=%22-4%22 r=%221.6%22 fill=%22%23A65A33%22/%3E%3Ccircle cx=%226%22 cy=%22-5%22 r=%221.6%22 fill=%22%23A65A33%22/%3E%3Ccircle cx=%221%22 cy=%226%22 r=%221.6%22 fill=%22%23A65A33%22/%3E%3C/g%3E%3C/svg%3E");background-size:260px 260px}
+
+/* Pasek */
+.top{position:sticky;top:0;z-index:10;background:rgba(250,248,245,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--linia)}
+.top-in{max-width:760px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand svg{flex:none;width:36px;height:36px;border-radius:10px}
+.brand b{font-size:18px;font-weight:700;letter-spacing:-.01em}
+.seg{display:inline-flex;padding:3px;gap:2px;background:var(--mleko);border:1px solid var(--linia);border-radius:12px;flex:none}
+.seg button{font:inherit;font-size:13px;font-weight:500;height:32px;min-width:44px;padding:0 12px;border:0;border-radius:9px;background:transparent;color:var(--mocha);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--karmel-j);color:var(--karmel-c);font-weight:700}
+.seg button:focus-visible{outline:2px solid var(--karmel);outline-offset:1px}
+
+/* Treść */
+main{max-width:760px;margin:0 auto;padding:24px 16px 56px}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mocha);margin:8px 4px 0}
+h1{font-size:30px;line-height:1.15;font-weight:800;letter-spacing:-.02em;margin:6px 4px 0}
+.meta{margin:10px 4px 0;font-size:13px;color:var(--mocha)}
+
+/* Karta „w skrócie” – ciemna jak wskazówka w aplikacji */
+.tldr{margin-top:20px;background:var(--kakao);color:#fff;border-radius:16px;padding:16px 18px}
+.tldr h2{margin:0 0 10px;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px}
+.tldr h2::after{content:"";flex:1}
+.tldr hr{border:0;border-top:1px solid rgba(255,255,255,.16);margin:0 0 12px}
+.tldr ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.tldr li{display:flex;gap:10px;color:var(--on-ciemne-2);font-size:14px;line-height:1.5}
+.tldr li svg{flex:none;width:18px;height:18px;margin-top:2px;color:var(--on-ciemne)}
+.tldr li b{color:#fff;font-weight:600}
+
+/* Spis treści */
+.toc{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.toc a{font-size:12px;font-weight:500;text-decoration:none;color:var(--karmel-c);background:var(--karmel-j);border-radius:8px;padding:3px 9px;line-height:18px}
+.toc a:hover{background:#efd9cc}
+
+/* Sekcje */
+section{margin-top:28px;scroll-margin-top:72px}
+.sh{display:flex;align-items:center;gap:10px;margin:0 4px 10px}
+.sic{flex:none;width:24px;height:24px;border-radius:8px;background:var(--karmel-j);color:var(--karmel);display:flex;align-items:center;justify-content:center}
+.sic svg{width:15px;height:15px}
+.sic.sg{background:var(--szalwia-j);color:var(--szalwia)}
+.sic.am{background:var(--bursztyn-j);color:var(--bursztyn)}
+h2.st{margin:0;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mocha)}
+.card{background:var(--biel);border:1px solid var(--linia);border-radius:16px;padding:16px 18px}
+.card+.card{margin-top:12px}
+.card h3{margin:0 0 6px;font-size:16px;font-weight:700}
+.card p{margin:0}
+.card p+p,.card p+ul,.card ul+p{margin-top:10px}
+.card ul{margin:0;padding-left:20px}
+.card li+li{margin-top:4px}
+.mut{color:var(--mocha)}
+
+/* Wiersze danych */
+.card ul.rows{margin:0;padding:0;list-style:none}
+.card .rows li+li{margin-top:0}
+.rows li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid #F0EAE3}
+.rows li:first-child{border-top:0;padding-top:0}
+.rows li:last-child{padding-bottom:0}
+.ric{flex:none;width:36px;height:36px;border-radius:12px;background:var(--karmel-j);color:var(--karmel);display:flex;align-items:center;justify-content:center}
+.ric svg{width:20px;height:20px}
+.rows li>div>b{display:block;font-size:15px;font-weight:600}
+.rows span.d{display:block;font-size:14px;color:var(--mocha);line-height:1.5;margin-top:1px}
+
+/* Plakietki */
+.bg{display:inline-flex;align-items:center;height:22px;padding:0 8px;border-radius:8px;font-size:12px;font-weight:600;vertical-align:1px;margin-left:6px}
+.bg.opt{background:var(--bursztyn-j);color:var(--bursztyn-c)}
+.bg.no{background:var(--szalwia-j);color:var(--szalwia-c)}
+
+/* Pole informacji */
+.info{margin-top:12px;background:var(--mleko);color:var(--mocha);border-radius:12px;padding:10px 12px;font-size:13px;line-height:1.5;display:flex;gap:10px}
+.info svg{flex:none;width:18px;height:18px;margin-top:1px}
+.info.wrn{background:var(--bursztyn-j);color:var(--bursztyn-c)}
+
+footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--mocha);font-size:12px;text-align:center}
+
+@media (max-width:480px){
+  h1{font-size:26px}
+  .card{padding:14px 14px}
+  .brand b{font-size:17px}
+}
+@media print{.top{position:static}.seg,.toc{display:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <div class="brand">
+      <!-- Ikona aplikacji (res/drawable/ic_launcher_*.xml) -->
+      <svg viewBox="0 0 108 108" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9835A"/><stop offset="1" stop-color="#9A5330"/></linearGradient></defs>
+        <rect width="108" height="108" fill="url(#g)"/>
+        <circle cx="80" cy="34" r="38" fill="#fff" fill-opacity=".165"/>
+        <circle cx="30" cy="84" r="30" fill="#fff" fill-opacity=".12"/>
+        <g transform="translate(0 2.5)">
+          <path fill="#4A3F39" d="M27,72H79A1.5,1.5 0 0 1 79,75H27A1.5,1.5 0 0 1 27,72Z"/>
+          <path fill="#FFF9F2" d="M36,52H72A4,4 0 0 1 76,56V70A2,2 0 0 1 74,72H34A2,2 0 0 1 32,70V56A4,4 0 0 1 36,52Z"/>
+          <path fill="#F3E3D2" d="M32,66H76V70A2,2 0 0 1 74,72H34A2,2 0 0 1 32,70Z"/>
+          <g fill="#F0BE8A">
+            <path d="M36,52H72A4,4 0 0 1 76,56V58H32V56A4,4 0 0 1 36,52Z"/>
+            <path d="M32.5,57V60A2.5,2.5 0 0 0 37.5,60V57Z"/><path d="M42.5,57V63A2.5,2.5 0 0 0 47.5,63V57Z"/>
+            <path d="M52.5,57V61A2.5,2.5 0 0 0 57.5,61V57Z"/><path d="M62.5,57V64A2.5,2.5 0 0 0 67.5,64V57Z"/>
+            <path d="M71,57V60A2.5,2.5 0 0 0 76,60V57Z"/>
+          </g>
+          <path fill="#FFF9F2" d="M44,38H64A4,4 0 0 1 68,42V52H40V42A4,4 0 0 1 44,38Z"/>
+          <g fill="#F0BE8A">
+            <path d="M44,38H64A4,4 0 0 1 68,42V44H40V42A4,4 0 0 1 44,38Z"/>
+            <path d="M40.5,43V46A2.5,2.5 0 0 0 45.5,46V43Z"/><path d="M48.5,43V48.5A2.5,2.5 0 0 0 53.5,48.5V43Z"/>
+            <path d="M56.5,43V46.5A2.5,2.5 0 0 0 61.5,46.5V43Z"/><path d="M63,43V47A2.5,2.5 0 0 0 68,47V43Z"/>
+          </g>
+          <path fill="#FFF9F2" d="M52.4,29H55.6V38.5H52.4Z"/>
+          <path fill="#F0BE8A" d="M52.4,32H55.6V33.6H52.4ZM52.4,35.2H55.6V36.8H52.4Z"/>
+          <path fill="#FFC857" d="M54,20.5C56.9,23.4 57.2,26.2 54,28.4C50.8,26.2 51.1,23.4 54,20.5Z"/>
+          <path fill="#FFF1C2" d="M54,23.6C55.2,24.9 55.3,26.1 54,27C52.7,26.1 52.8,24.9 54,23.6Z"/>
+        </g>
+        <circle cx="74" cy="69" r="8.5" fill="#F7D08A"/>
+        <circle cx="74" cy="69" r="5" fill="none" stroke="#D9922B" stroke-width="1.5"/>
+      </svg>
+      <b>Ciastomat</b>
+    </div>
+    <div class="seg" role="group" aria-label="Język / Language">
+      <button type="button" data-set="pl" aria-pressed="true">PL</button>
+      <button type="button" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<!-- SVG sprite: ikony w stylu aplikacji (linia 2, końce obłe) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.6-7.96A5.5 5.5 0 0 1 17 8.5a4.75 4.75 0 0 1 .5 9.5H7z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="M4 17l5-4.5 4 3.5 3-2.5 4 3.5"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.5"/><circle cx="17.5" cy="6" r="2.5"/><circle cx="17.5" cy="18" r="2.5"/><path d="M8.2 10.8l7.1-3.6M8.2 13.2l7.1 3.6"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7z"/><path d="M14 3v4h4"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.8"/><path d="M4.5 20c.8-3.6 3.8-5.5 7.5-5.5s6.7 1.9 7.5 5.5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7.5l8 6 8-6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.8v.1"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9.5 7V4.5h5V7M6.5 7l.8 12.5h9.4L17.5 7"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 0 1-14 5.3M4 12a8 8 0 0 1 14-5.3"/><path d="M18.5 3v4h-4M5.5 21v-4h4"/></symbol>
+    <symbol id="i-child" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M6 20c.5-3.2 3-5 6-5s5.5 1.8 6 5"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============================ POLSKI ============================ -->
+<main lang="pl">
+  <p class="eyebrow">Ciastomat · aplikacja na Androida</p>
+  <h1>Polityka prywatności</h1>
+  <p class="meta">Obowiązuje od 23 listopada 2026 · Wersja 1.0</p>
+
+  <div class="tldr">
+    <h2>W skrócie</h2>
+    <hr>
+    <ul>
+      <li><svg><use href="#i-check"/></svg><span><b>Twoje dane zostają w Twoim telefonie.</b> Produkty, przepisy, zamówienia i listy zakupów zapisujemy lokalnie, w prywatnej pamięci aplikacji.</span></li>
+      <li><svg><use href="#i-check"/></svg><span><b>Brak serwera, reklam, analityki i śledzenia.</b> Nie zbieramy żadnych danych i nie mamy do nich dostępu.</span></li>
+      <li><svg><use href="#i-check"/></svg><span><b>Konto nie jest wymagane.</b> Logowanie przez Google jest opcjonalne, a dane trafiają wtedy wyłącznie na Twój własny Dysk Google.</span></li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Spis treści">
+    <a href="#pl-dane">Jakie dane</a>
+    <a href="#pl-uprawnienia">Uprawnienia</a>
+    <a href="#pl-google">Konto Google</a>
+    <a href="#pl-udostepnianie">Udostępnianie</a>
+    <a href="#pl-brak">Czego nie robimy</a>
+    <a href="#pl-prawa">Twoje prawa</a>
+  </nav>
+
+  <section id="pl-admin">
+    <div class="sh"><span class="sic"><svg><use href="#i-user"/></svg></span><h2 class="st">O aplikacji</h2></div>
+    <div class="card">
+      <p><b>Ciastomat</b> to aplikacja na Androida dla cukierników i osób pieczących na zamówienie. Zapisuje składniki, dodatki i przepisy, na bieżąco liczy koszt i cenę każdego ciasta, prowadzi zamówienia z terminami oraz listy zakupów. Zamówienie lub ofertę ciast można udostępnić jako gotową grafikę.</p>
+      <p>Aplikacja nie wysyła danych na żaden własny serwer, więc <b>nikt poza Tobą nie ma dostępu do tego, co w niej zapisujesz</b>. Dane są pod Twoją wyłączną kontrolą.</p>
+    </div>
+  </section>
+
+  <section id="pl-dane">
+    <div class="sh"><span class="sic"><svg><use href="#i-phone"/></svg></span><h2 class="st">Jakie dane przechowuje aplikacja</h2></div>
+    <div class="card">
+      <p>Wszystko, co wpiszesz w aplikacji, jest zapisywane <b>wyłącznie na Twoim urządzeniu</b>, w lokalnej bazie danych w prywatnym katalogu aplikacji (inne aplikacje nie mają do niego dostępu).</p>
+      <ul class="rows" style="margin-top:14px">
+        <li><span class="ric"><svg><use href="#i-list"/></svg></span><div><b>Produkty, przepisy i ceny</b><span class="d">Składniki, dodatki, półprodukty (bazy), ciasta, ich skład, alergeny, notatki, progi cen.</span></div></li>
+        <li><span class="ric"><svg><use href="#i-cal"/></svg></span><div><b>Zamówienia i listy zakupów</b><span class="d">Terminy, zamówione ciasta, ceny, zaliczki oraz treści, które sam wpiszesz (np. imię klienta lub notatkę, jeśli je dodasz).</span></div></li>
+        <li><span class="ric"><svg><use href="#i-img"/></svg></span><div><b>Zdjęcia ciast</b><span class="d">Tylko te, które sam dodasz. Aplikacja zapisuje zmniejszoną kopię zdjęcia w swojej bazie.</span></div></li>
+        <li><span class="ric"><svg><use href="#i-info"/></svg></span><div><b>Ustawienia</b><span class="d">Język, waluta, jednostki, styl grafik, zamknięte wskazówki.</span></div></li>
+      </ul>
+      <div class="info"><svg><use href="#i-info"/></svg><span>Dane są przechowywane, dopóki ich nie usuniesz albo nie odinstalujesz aplikacji. Odinstalowanie usuwa lokalną bazę.</span></div>
+    </div>
+  </section>
+
+  <section id="pl-uprawnienia">
+    <div class="sh"><span class="sic am"><svg><use href="#i-shield"/></svg></span><h2 class="st">Uprawnienia systemowe</h2></div>
+    <div class="card">
+      <h3>Kalendarz <span class="bg opt">opcjonalnie</span></h3>
+      <p>Uprawnienia <code>READ_CALENDAR</code> i <code>WRITE_CALENDAR</code> są potrzebne tylko do funkcji „Synchronizacja z kalendarzem”. Aplikacja prosi o zgodę dopiero po jej włączeniu w menu. Zamówienia trafiają <b>jednokierunkowo</b>, z aplikacji do wybranego przez Ciebie kalendarza w telefonie. Aplikacja czyta kalendarz jedynie po to, aby wyświetlić listę dostępnych kalendarzy i znaleźć wydarzenia, które sama utworzyła. Treści innych wydarzeń nie są przetwarzane. Po wyłączeniu funkcji możesz cofnąć zgodę w ustawieniach Androida.</p>
+      <p class="mut">Jeśli wybrany kalendarz jest synchronizowany z chmurą (np. z kontem Google), robi to sam system lub dostawca kalendarza, zgodnie z jego zasadami, a nie aplikacja Ciastomat.</p>
+    </div>
+    <div class="card">
+      <h3>Aparat i zdjęcia <span class="bg no">bez uprawnienia</span></h3>
+      <p>Ciastomat <b>nie żąda</b> uprawnienia do aparatu ani do plików ze zdjęciami. Zdjęcie ciasta robisz systemowym aparatem albo wybierasz w systemowym oknie wyboru zdjęć. Aplikacja dostaje tylko to jedno zdjęcie, które wskażesz.</p>
+    </div>
+    <div class="card">
+      <h3>Internet <span class="bg opt">tylko po zalogowaniu</span></h3>
+      <p>Aplikacja łączy się z internetem wyłącznie wtedy, gdy włączysz logowanie do konta Google (patrz niżej). Bez tego działa całkowicie offline.</p>
+    </div>
+  </section>
+
+  <section id="pl-google">
+    <div class="sh"><span class="sic sg"><svg><use href="#i-cloud"/></svg></span><h2 class="st">Konto Google (opcjonalne)</h2></div>
+    <div class="card">
+      <p>Możesz zalogować się kontem Google, aby zapisać dane poza telefonem i mieć je na kilku własnych urządzeniach. <b>Logowanie jest dobrowolne, a aplikacja działa także bez niego.</b></p>
+      <ul class="rows" style="margin-top:14px">
+        <li><span class="ric"><svg><use href="#i-cloud"/></svg></span><div><b>Gdzie trafiają dane</b><span class="d">Do ukrytego folderu aplikacji (<code>appDataFolder</code>) na <b>Twoim Dysku Google</b>. To folder techniczny, do którego dostęp ma tylko Ciastomat i tylko po Twojej zgodzie. Dane nie trafiają do nas ani do żadnej osoby trzeciej.</span></div></li>
+        <li><span class="ric"><svg><use href="#i-user"/></svg></span><div><b>Co aplikacja pobiera z konta</b><span class="d">Imię, adres e-mail i zdjęcie profilowe, wyłącznie po to, by wyświetlić na ekranie, kto jest zalogowany. Nie zapisujemy ich nigdzie poza Twoim urządzeniem.</span></div></li>
+        <li><span class="ric"><svg><use href="#i-refresh"/></svg></span><div><b>Co jest synchronizowane</b><span class="d">Produkty, przepisy, zamówienia, listy zakupów i wspólne ustawienia. <b>Zdjęcia ciast nie są synchronizowane.</b></span></div></li>
+        <li><span class="ric"><svg><use href="#i-trash"/></svg></span><div><b>Jak to wyłączyć i usunąć</b><span class="d">Wylogowanie w aplikacji kończy synchronizację. Dane zapisane na Dysku usuniesz w ustawieniach konta Google (zarządzanie danymi aplikacji w Dysku). Dostęp aplikacji cofniesz na stronie <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</span></div></li>
+      </ul>
+      <div class="info"><svg><use href="#i-info"/></svg><span>Wykorzystanie i przekazywanie przez Ciastomat informacji uzyskanych z interfejsów API Google jest zgodne z <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Polityką danych użytkownika w usługach interfejsu API Google</a>, w tym z wymogami Limited Use. Dane z konta służą wyłącznie do działania funkcji, którą włączasz: nie sprzedajemy ich, nie używamy do reklam i nie pozwalamy ludziom ich czytać.</span></div>
+      <p class="mut" style="margin-top:12px">Przetwarzanie danych po stronie Google podlega <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Polityce prywatności Google</a>.</p>
+    </div>
+  </section>
+
+  <section id="pl-udostepnianie">
+    <div class="sh"><span class="sic"><svg><use href="#i-share"/></svg></span><h2 class="st">Udostępnianie i kopie zapasowe</h2></div>
+    <div class="card">
+      <h3>Udostępnianie zamówień i oferty</h3>
+      <p>Obraz zamówienia lub oferty ciast tworzy się na Twoim telefonie i trafia do innej aplikacji (SMS, komunikator, e-mail) <b>dopiero wtedy, gdy sam wybierzesz</b>, dokąd go wysłać, w systemowym oknie udostępniania. Od tej chwili obowiązują zasady tej aplikacji. Plik tymczasowy leży w pamięci podręcznej Ciastomatu.</p>
+    </div>
+    <div class="card">
+      <h3>Kopia zapasowa do pliku</h3>
+      <p>Funkcja „Utwórz kopię” zapisuje plik w miejscu, które wskażesz w systemowym oknie wyboru. Plik zawiera Twoje dane i nie jest nigdzie wysyłany przez aplikację. Dbasz o niego Ty. Wczytanie kopii zastępuje dane w aplikacji.</p>
+    </div>
+    <div class="card">
+      <h3>Kopia zapasowa systemu Android</h3>
+      <p>Aplikacja ma włączoną systemową kopię Android (<code>allowBackup</code>). Jeśli masz ją włączoną w telefonie, system Android może zapisywać dane aplikacji na Twoim koncie Google w ramach własnej kopii urządzenia. Odbywa się to poza aplikacją, na zasadach Google, i możesz to wyłączyć w ustawieniach Androida.</p>
+    </div>
+  </section>
+
+  <section id="pl-brak">
+    <div class="sh"><span class="sic sg"><svg><use href="#i-shield"/></svg></span><h2 class="st">Czego nie robimy</h2></div>
+    <div class="card">
+      <ul>
+        <li>Nie zbieramy danych osobowych ani danych o korzystaniu z aplikacji.</li>
+        <li>Nie używamy reklam, analityki, narzędzi do raportowania awarii ani innych zewnętrznych SDK śledzących.</li>
+        <li>Nie sprzedajemy ani nie udostępniamy danych podmiotom trzecim.</li>
+        <li>Nie profilujemy użytkowników i nie podejmujemy zautomatyzowanych decyzji.</li>
+        <li>Nie wymagamy konta ani rejestracji.</li>
+      </ul>
+      <p class="mut" style="margin-top:12px">Jedyny odnośnik zewnętrzny to przycisk wsparcia (otwiera stronę w przeglądarce dopiero po jego dotknięciu). Strona, na którą trafisz, ma własną politykę prywatności.</p>
+    </div>
+  </section>
+
+  <section id="pl-prawa">
+    <div class="sh"><span class="sic"><svg><use href="#i-user"/></svg></span><h2 class="st">Twoje prawa i dzieci</h2></div>
+    <div class="card">
+      <p>Ponieważ dane są u Ciebie (w telefonie lub na Twoim Dysku Google), <b>wszystkimi prawami zarządzasz sam w aplikacji</b>: przeglądasz, poprawiasz, eksportujesz (kopia do pliku) i usuwasz dane. Jeżeli przepisy (np. RODO) dają Ci prawo dostępu, sprostowania, usunięcia czy przenoszenia danych, to dzięki powyższemu realizujesz je bez naszego udziału. Masz też prawo wniesienia skargi do organu nadzorczego (w Polsce: Prezes Urzędu Ochrony Danych Osobowych).</p>
+      <p>Aplikacja jest narzędziem dla osób dorosłych prowadzących wypieki i nie jest skierowana do dzieci.</p>
+    </div>
+  </section>
+
+  <section id="pl-zmiany">
+    <div class="sh"><span class="sic"><svg><use href="#i-refresh"/></svg></span><h2 class="st">Zmiany tej polityki</h2></div>
+    <div class="card">
+      <p>Jeśli zmienimy zasady (np. dodamy funkcję, która przetwarza dane inaczej), zaktualizujemy tę stronę i datę „Obowiązuje od” u góry. Poprzednie wersje nie obowiązują.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ ENGLISH ============================ -->
+<main lang="en">
+  <p class="eyebrow">Ciastomat · Android app</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective November 23, 2026 · Version 1.0</p>
+
+  <div class="tldr">
+    <h2>In short</h2>
+    <hr>
+    <ul>
+      <li><svg><use href="#i-check"/></svg><span><b>Your data stays on your phone.</b> Products, recipes, orders and shopping lists are stored locally in the app's private storage.</span></li>
+      <li><svg><use href="#i-check"/></svg><span><b>No server, ads, analytics or tracking.</b> We don't collect any data and have no access to it.</span></li>
+      <li><svg><use href="#i-check"/></svg><span><b>No account needed.</b> Signing in with Google is optional, and your data then goes only to your own Google Drive.</span></li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Table of contents">
+    <a href="#en-data">What data</a>
+    <a href="#en-permissions">Permissions</a>
+    <a href="#en-google">Google account</a>
+    <a href="#en-sharing">Sharing</a>
+    <a href="#en-never">What we don't do</a>
+    <a href="#en-rights">Your rights</a>
+  </nav>
+
+  <section id="en-admin">
+    <div class="sh"><span class="sic"><svg><use href="#i-user"/></svg></span><h2 class="st">About the app</h2></div>
+    <div class="card">
+      <p><b>Ciastomat</b> is an Android app for bakers and anyone who bakes to order. It stores ingredients, extras and recipes, calculates the cost and price of every cake as you go, and keeps orders with due dates and shopping lists. An order or the cake offer can be shared as a ready-made image.</p>
+      <p>The app sends no data to any server of its own, so <b>nobody but you has access to what you save in it</b>. The data is under your sole control.</p>
+    </div>
+  </section>
+
+  <section id="en-data">
+    <div class="sh"><span class="sic"><svg><use href="#i-phone"/></svg></span><h2 class="st">What data the app stores</h2></div>
+    <div class="card">
+      <p>Everything you enter is saved <b>only on your device</b>, in a local database in the app's private directory (other apps cannot access it).</p>
+      <ul class="rows" style="margin-top:14px">
+        <li><span class="ric"><svg><use href="#i-list"/></svg></span><div><b>Products, recipes and prices</b><span class="d">Ingredients, extras, bases (sub-recipes), cakes, their composition, allergens, notes, price tiers.</span></div></li>
+        <li><span class="ric"><svg><use href="#i-cal"/></svg></span><div><b>Orders and shopping lists</b><span class="d">Dates, ordered cakes, prices, deposits, and any text you type yourself (for example a customer's name or a note, if you add one).</span></div></li>
+        <li><span class="ric"><svg><use href="#i-img"/></svg></span><div><b>Cake photos</b><span class="d">Only those you add yourself. The app stores a downsized copy of the photo in its database.</span></div></li>
+        <li><span class="ric"><svg><use href="#i-info"/></svg></span><div><b>Settings</b><span class="d">Language, currency, units, graphic style, dismissed hints.</span></div></li>
+      </ul>
+      <div class="info"><svg><use href="#i-info"/></svg><span>Data is kept until you delete it or uninstall the app. Uninstalling removes the local database.</span></div>
+    </div>
+  </section>
+
+  <section id="en-permissions">
+    <div class="sh"><span class="sic am"><svg><use href="#i-shield"/></svg></span><h2 class="st">System permissions</h2></div>
+    <div class="card">
+      <h3>Calendar <span class="bg opt">optional</span></h3>
+      <p>The <code>READ_CALENDAR</code> and <code>WRITE_CALENDAR</code> permissions are needed only for the “Calendar sync” feature. The app asks for consent only after you turn it on in the menu. Orders go <b>one way</b>, from the app to a calendar on your phone that you choose. The app reads the calendar only to list available calendars and to find the events it created itself. The content of other events is not processed. After turning the feature off you can revoke the permission in Android settings.</p>
+      <p class="mut">If the chosen calendar is synced to a cloud (for example a Google account), that is done by the system or the calendar provider under their own rules, not by Ciastomat.</p>
+    </div>
+    <div class="card">
+      <h3>Camera and photos <span class="bg no">no permission</span></h3>
+      <p>Ciastomat <b>does not request</b> permission for the camera or your photo files. You take a cake photo with the system camera or choose it in the system photo picker. The app receives only the one photo you pick.</p>
+    </div>
+    <div class="card">
+      <h3>Internet <span class="bg opt">only after sign-in</span></h3>
+      <p>The app connects to the internet only when you turn on Google sign-in (see below). Otherwise it works fully offline.</p>
+    </div>
+  </section>
+
+  <section id="en-google">
+    <div class="sh"><span class="sic sg"><svg><use href="#i-cloud"/></svg></span><h2 class="st">Google account (optional)</h2></div>
+    <div class="card">
+      <p>You can sign in with a Google account to keep your data off the phone and use it on several of your own devices. <b>Signing in is voluntary, and the app works without it.</b></p>
+      <ul class="rows" style="margin-top:14px">
+        <li><span class="ric"><svg><use href="#i-cloud"/></svg></span><div><b>Where the data goes</b><span class="d">To the app's hidden folder (<code>appDataFolder</code>) in <b>your own Google Drive</b>. It is a technical folder that only Ciastomat can access, and only with your consent. The data does not reach us or any third party.</span></div></li>
+        <li><span class="ric"><svg><use href="#i-user"/></svg></span><div><b>What the app reads from your account</b><span class="d">Your name, email address and profile picture, only to show on screen who is signed in. We do not store them anywhere except on your device.</span></div></li>
+        <li><span class="ric"><svg><use href="#i-refresh"/></svg></span><div><b>What is synced</b><span class="d">Products, recipes, orders, shopping lists and shared settings. <b>Cake photos are not synced.</b></span></div></li>
+        <li><span class="ric"><svg><use href="#i-trash"/></svg></span><div><b>How to turn it off and delete</b><span class="d">Signing out in the app stops syncing. You can delete the data stored in Drive in your Google account settings (managing app data in Drive). You can revoke the app's access at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</span></div></li>
+      </ul>
+      <div class="info"><svg><use href="#i-info"/></svg><span>Ciastomat's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. Account data is used only to run the feature you turn on: we do not sell it, use it for ads, or allow humans to read it.</span></div>
+      <p class="mut" style="margin-top:12px">Processing on Google's side is governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+    </div>
+  </section>
+
+  <section id="en-sharing">
+    <div class="sh"><span class="sic"><svg><use href="#i-share"/></svg></span><h2 class="st">Sharing and backups</h2></div>
+    <div class="card">
+      <h3>Sharing orders and the cake offer</h3>
+      <p>An order or offer image is created on your phone and goes to another app (SMS, messenger, email) <b>only when you choose</b> where to send it in the system share sheet. From then on, that app's rules apply. The temporary file sits in Ciastomat's cache.</p>
+    </div>
+    <div class="card">
+      <h3>Backup to a file</h3>
+      <p>“Create backup” saves a file to a place you pick in the system file chooser. The file contains your data and is not sent anywhere by the app. You look after it. Restoring a backup replaces the data in the app.</p>
+    </div>
+    <div class="card">
+      <h3>Android system backup</h3>
+      <p>The app has Android system backup enabled (<code>allowBackup</code>). If you have it turned on in your phone, Android may save the app's data to your Google account as part of its own device backup. This happens outside the app, under Google's rules, and you can turn it off in Android settings.</p>
+    </div>
+  </section>
+
+  <section id="en-never">
+    <div class="sh"><span class="sic sg"><svg><use href="#i-shield"/></svg></span><h2 class="st">What we don't do</h2></div>
+    <div class="card">
+      <ul>
+        <li>We don't collect personal data or data about how you use the app.</li>
+        <li>We use no ads, analytics, crash-reporting tools or other third-party tracking SDKs.</li>
+        <li>We don't sell or share data with third parties.</li>
+        <li>We don't profile users or make automated decisions.</li>
+        <li>We don't require an account or registration.</li>
+      </ul>
+      <p class="mut" style="margin-top:12px">The only external link is the support button (it opens a page in your browser only after you tap it). That page has its own privacy policy.</p>
+    </div>
+  </section>
+
+  <section id="en-rights">
+    <div class="sh"><span class="sic"><svg><use href="#i-user"/></svg></span><h2 class="st">Your rights and children</h2></div>
+    <div class="card">
+      <p>Because the data is with you (on your phone or in your own Google Drive), <b>you manage all your rights yourself in the app</b>: view, correct, export (backup to a file) and delete your data. If the law (for example GDPR) gives you the right of access, rectification, erasure or portability, this lets you exercise it without our involvement. You also have the right to lodge a complaint with a supervisory authority.</p>
+      <p>The app is a tool for adults who bake and is not directed at children.</p>
+    </div>
+  </section>
+
+  <section id="en-changes">
+    <div class="sh"><span class="sic"><svg><use href="#i-refresh"/></svg></span><h2 class="st">Changes to this policy</h2></div>
+    <div class="card">
+      <p>If we change how things work (for example by adding a feature that handles data differently), we will update this page and the “Effective” date at the top. Earlier versions no longer apply.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span lang="pl">© 2026 Ciastomat</span><span lang="en">© 2026 Ciastomat</span>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement, KEY = "ciastomat-privacy-lang";
+  function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function put(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+  function apply(l) {
+    root.setAttribute("data-lang", l);
+    root.setAttribute("lang", l);
+    document.title = l === "pl" ? "Ciastomat – Polityka prywatności" : "Ciastomat – Privacy Policy";
+    document.querySelectorAll(".seg button").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-set") === l));
+    });
+  }
+  var q = new URLSearchParams(location.search).get("lang");
+  var start = (q === "pl" || q === "en") ? q : (get() || ((navigator.language || "pl").toLowerCase().indexOf("pl") === 0 ? "pl" : "en"));
+  apply(start);
+  document.querySelectorAll(".seg button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var l = b.getAttribute("data-set"); apply(l); put(l);
+      window.scrollTo({ top: 0 });
+    });
+  });
+})();
+</script>
+</body>
+</html>
